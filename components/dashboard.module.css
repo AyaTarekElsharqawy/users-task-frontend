@@ -1,0 +1,115 @@
+.dashboard-container {
+  background: white;
+  min-height: 100vh;
+}
+.dashboard-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  background: #2563eb;
+  color: white;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+.dashboard-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.dashboard-logout {
+  background: white;
+  color: #2563eb;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  transition: background 0.2s;
+}
+.dashboard-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.dashboard-add-btn {
+  padding: 10px 24px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.1);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dashboard-search {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 1rem;
+  color: #111827;
+  width: 300px;
+  margin-left: 16px;
+  background: #f9fafb;
+}
+.dashboard-table-container {
+  overflow-x: auto;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  background: #fff;
+}
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: inherit;
+}
+.dashboard-table th {
+  padding: 16px;
+  color: #111827;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 2px solid #e5e7eb;
+}
+.dashboard-table td {
+  padding: 16px;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+}
+.dashboard-table tr:nth-child(even) {
+  background: #f9fafb;
+}
+.dashboard-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  gap: 12px;
+}
+.dashboard-pagination-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.dashboard-pagination-btn:disabled {
+  background: #e5e7eb;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+.dashboard-pagination-btn:not(:disabled) {
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+.dashboard-pagination-info {
+  color: #111827;
+  font-weight: bold;
+  font-size: 1rem;
+}

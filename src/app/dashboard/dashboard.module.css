@@ -1,0 +1,130 @@
+.container {
+  background: white;
+  min-height: 100vh;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  background: #2563eb;
+  color: white;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+.navTitle {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.logoutButton {
+  background: white;
+  color: #2563eb;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  transition: background 0.2s;
+}
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.addUserButton {
+  padding: 10px 24px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.1);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.searchInput {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 1rem;
+  color: #111827;
+  width: 300px;
+  margin-left: 16px;
+  background: #f9fafb;
+}
+.tableContainer {
+  overflow-x: auto;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  background: #fff;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: inherit;
+}
+.theadRow {
+  background: #f3f4f6;
+}
+.th {
+  padding: 16px;
+  color: #111827;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 2px solid #e5e7eb;
+}
+.td {
+  padding: 16px;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+}
+.actionButton {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+}
+.editButton {
+  background-color: #3b82f6;
+  color: white;
+}
+.deleteButton {
+  background-color: #ef4444;
+  color: white;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  gap: 12px;
+}
+.pageButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.pageButtonActive {
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+.pageButtonDisabled {
+  background: #e5e7eb;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+.pageInfo {
+  color: #111827;
+  font-weight: bold;
+  font-size: 1rem;
+}
