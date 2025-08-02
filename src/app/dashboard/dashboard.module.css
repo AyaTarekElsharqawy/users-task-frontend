@@ -64,6 +64,102 @@
   border-radius: 12px;
   background: #fff;
 }
+/* UserForm Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modalContent {
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  position: relative;
+  color: #111;
+}
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.modalTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111;
+}
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}
+.formGroup {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #111;
+}
+.input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 1rem;
+  color: #111;
+  background: #f9fafb;
+  outline: none;
+  transition: border 0.2s;
+}
+.inputError {
+  border-color: #ef4444;
+}
+.error {
+  color: #ef4444;
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 18px;
+}
+.cancelButton {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #111;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.submitButton {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  transition: background 0.2s;
+}
 .table {
   width: 100%;
   border-collapse: collapse;
